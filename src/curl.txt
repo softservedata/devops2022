@@ -1,0 +1,7 @@
+
+curl -i -X POST --data "name=admin&password=qwerty" http://localhost:8080/login
+curl -X POST --data "name=admin&password=qwerty" http://localhost:8080/login
+
+curl -i -X PUT -d "token=QPP5LCZVAB9YYCGQ3LNOU3R1A6N45R18&time=900000" http://localhost:8080/tokenlifetime
+
+curl -i -X GET http://localhost:8080/tokenlifetime
